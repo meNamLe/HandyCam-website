@@ -1,0 +1,6 @@
+@media only screen and (min-width: 960px) {
+    .lazy-center-box {
+        border-left: 1px solid lightgray;
+        border-right: 1px solid lightgray;
+    }
+}
