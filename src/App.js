@@ -4,6 +4,8 @@ import './App.css';
 import Header from './components/header/header';
 import About from './components/about/about';
 import Navbar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
+import RecentProjects from './components/recent-projects/recent-projects';
 
 class App extends Component {
   render() {
@@ -12,6 +14,8 @@ class App extends Component {
         <Navbar />
         <Header />
         <About />
+        <RecentProjects />
+        <Footer />
       </div>
     );
   }

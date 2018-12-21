@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 
-import BlessUpSVG from '../../bless_up.svg';
 import HandyCam from '../../HandyCam.png';
 import './header.css';
-import { TeleportBtn } from '../../styled-components/teleport-btn/teleport-btn';
 import { SpecialBoiHeader } from '../../styled-components/special-boi-header/special-boi-header';
 
 const particleParams = {
@@ -60,6 +58,15 @@ const particleParams = {
 };
 
 class Header extends Component {
+    onScrollTeleport = (height) => {
+        console.log('hi')
+        window.scroll({
+          top: height, 
+          left: 0, 
+          behavior: 'smooth' 
+        });
+    }
+
     render() {
         return (
             <div className="Header-Component">
@@ -83,6 +90,7 @@ class Header extends Component {
                     title="HandyCam"
                     desc="Take this as a sign to learn sign language?"
                     buttonText="Our Mission"
+                    clickHandler={() => this.onScrollTeleport(600)}
                     />
             </div>
         )

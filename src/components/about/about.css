@@ -12,6 +12,22 @@
     display: flex;
 }
 
+.gamer-girl {
+    width: 100%;
+
+}
+
+.p-e-e {
+    width: 400px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    margin-right: 0;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #383838;
+}
+
 @media only screen and (min-width: 960px) {
     .flex-box-container {
         margin-top: -100px;

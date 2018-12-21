@@ -6,7 +6,7 @@ class Navbar extends Component {
 
     componentDidMount() {
         $(window).scroll(() => {
-            if($(window).scrollTop() > 300) {
+            if($(window).scrollTop() > 25) {
                 $(".navbar").addClass("navbar-background");
             } else {
                 $(".navbar").removeClass("navbar-background");
@@ -14,8 +14,17 @@ class Navbar extends Component {
         })
     }
 
+    onScrollTeleport(height) {
+        console.log('here');
+        window.scroll({
+          top: height, 
+          left: 0, 
+          behavior: 'smooth' 
+        });
+    }
+
     onMenuToggle = () => {
-        $(".active-toggle").toggle(0);
+        $(".active-toggle").toggle();
     }
 
     render() {
@@ -25,20 +34,17 @@ class Navbar extends Component {
                         <i className="material-icons">menu</i>
                     </span>
                     <ul className="main-nav active-toggle" id="js-menu">
-                        <li>
+                        <li onClick={() => this.onScrollTeleport(0)}>
                             <a href="#" className="nav-links">Home</a>
                         </li>
-                        <li>
+                        <li onClick={() => this.onScrollTeleport(600)}>
                             <a href="#" className="nav-links">Goals</a>
                         </li>
-                        <li>
+                        <li onClick={() => this.onScrollTeleport(1150)}>
                             <a href="#" className="nav-links">About</a>
                         </li>
-                        <li>
+                        <li onClick={() => this.onScrollTeleport(1900)}>
                             <a href="#" className="nav-links">Recent Work</a>
-                        </li>
-                        <li>
-                            <a href="#" className="nav-links">Contact</a>
                         </li>
                     </ul>
             </nav>

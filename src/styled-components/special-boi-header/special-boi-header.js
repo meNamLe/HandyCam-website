@@ -75,7 +75,8 @@ const Desc = styled.p`
 const SpecialBoiHeader = ({
     title,
     desc, 
-    buttonText
+    buttonText,
+    clickHandler
 }) => (
     <GridContainer>
         <HeaderTitle>
@@ -83,20 +84,22 @@ const SpecialBoiHeader = ({
             <img src={BlessUpSVG} />
         </HeaderTitle>
         <Desc>{desc}</Desc>
-        <TeleportBtn>{buttonText}</TeleportBtn>
+        <TeleportBtn onClick={() => clickHandler()}>{buttonText}</TeleportBtn>
     </GridContainer>
 )
 
 SpecialBoiHeader.defaultProps = {
     title: null,
     desc: null,
-    buttonText: null
+    buttonText: null,
+    clickHandler: null,
 };
 
 SpecialBoiHeader.propTypes = {
     title: PropTypes.string.isRequired,
     desc: PropTypes.string.isRequired,
-    buttonText: PropTypes.string.isRequired  
+    buttonText: PropTypes.string.isRequired,  
+    clickHandler: PropTypes.func.isRequired
 };
 
 export { SpecialBoiHeader };

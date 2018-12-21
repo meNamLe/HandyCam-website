@@ -1,0 +1,13 @@
+.Footer {
+    background-color: #05386B;
+    height: 400px;
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+.copyright {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #8F9AA7;
+    margin-top: 80px;
+}
