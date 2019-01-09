@@ -3,7 +3,7 @@
 @keyframes move {
     100% {
         opacity: 1;
-        transform: translate(40%);
+        transform: translate(30%);
     }
 }
 
@@ -22,9 +22,9 @@
 @media only screen and (min-width: 960px) {
     .handycam-photo {
         position: absolute;
-        right: 300px;
-        width: 20vw; 
-        top: 120px;
+        right: 250px;
+        width: 50vw; 
+        top: 30px;
         animation: move 1s forwards;
     }
 }
@@ -33,8 +33,8 @@
     .handycam-photo {
         position: relative;
         left: 50%;
-        margin-left: -20vw;
-        width: 40vw; 
+        margin-left: -40vw;
+        width: 80vw; 
         top: -450px;
         animation: opacity1 1s forwards;
     }

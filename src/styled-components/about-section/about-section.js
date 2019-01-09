@@ -45,7 +45,7 @@ const Image = styled.img`
         display: none
     }
 
-    width: 30vw;
+    width: 50vw;
 `;
 
 

@@ -72,7 +72,7 @@ class Header extends Component {
             <div className="Header-Component">
                 <Particles 
                     params={particleParams}
-                    height={800}
+                    height={900}
                     className="Particles-Header-Background"
                 />
 

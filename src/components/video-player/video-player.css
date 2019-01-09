@@ -1,0 +1,27 @@
+.Video-Player {
+    text-align: center;
+    padding: 100px 0;
+    background: #fff;
+}
+
+.video-image {
+    filter: brightness(70%);
+    transition: .25s;
+}
+
+@media only screen and (min-width: 960px) {
+    .video-image {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .video-image {
+        height: 250px;
+    }
+}
+
+
+.video-image:hover {
+    filter: brightness(40%);
+}
